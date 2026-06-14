@@ -9,6 +9,11 @@ The Web APP is also made using Coding Agent.
 ## Demo Url
 https://oldserver.karad.city/apps/aatif/scaweb/
 
+1) Click on Get Started
+2) After that click on Start Journey
+3) Fill you information
+4) Talk to Study Coach AI.
+
 ## Overview
 
 Study Coach AI is an AI-powered learning companion that helps students:
@@ -52,3 +57,4 @@ In Development
 - [ ] Final Deployment
 
 ## App is still in development, user may find some issues.
+## The API keys and user credentials are not provided.
