@@ -38,8 +38,8 @@ In Development
 
 - [x] Agent Setup
 - [x] Memory System
-- [ ] Landing Page
-- [ ] Dashboard
+- [x] Landing Page
+- [x] Dashboard
 - [ ] Chat Interface
-- [ ] Foundry Integration
+- [x] Foundry Integration
 - [ ] Final Deployment
