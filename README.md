@@ -43,3 +43,5 @@ In Development
 - [ ] Chat Interface
 - [x] Foundry Integration
 - [ ] Final Deployment
+
+## App is still in development, user may find some issues.
