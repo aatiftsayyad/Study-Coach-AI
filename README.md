@@ -6,6 +6,9 @@ The AI Study Coach That Remembers, Adapts, and Guides.
 Uses Microsoft Azure and Microsoft Foundry Services.
 The Web APP is also made using Coding Agent.
 
+## Demo Url
+https://oldserver.karad.city/apps/aatif/scaweb/
+
 ## Overview
 
 Study Coach AI is an AI-powered learning companion that helps students:
