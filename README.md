@@ -2,6 +2,10 @@
 
 The AI Study Coach That Remembers, Adapts, and Guides.
 
+## Powered by Microsoft
+Uses Microsoft Azure and Microsoft Foundry Services.
+The Web APP is also made using Coding Agent.
+
 ## Overview
 
 Study Coach AI is an AI-powered learning companion that helps students:
