@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Coach AI - Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-shell">
+        <aside class="sidebar">
+            <div class="logo">🧠 Study Coach AI</div>
+            <button class="new-chat" id="newSessionBtn">+ New Session</button>
+
+            <div class="profile-card">
+                <div class="profile-label">Student</div>
+                <div id="studentName" class="profile-value">Student</div>
+                <div class="profile-label" style="margin-top:12px">Goal</div>
+                <div id="studentGoal" class="profile-value small">No goal yet</div>
+            </div>
+
+            <div class="history-title">Recent memory</div>
+            <div id="historyList" class="history"></div>
+        </aside>
+
+        <main class="chat-main">
+            <header class="chat-header">
+                <div>
+                    <p class="eyebrow">Personalized chat</p>
+                    <h1>AI Study Coach</h1>
+                    <p id="chatSubtitle">Your local memory-powered study companion.</p>
+                </div>
+                <a href="dashboard.html" class="dashboard-link">Dashboard</a>
+            </header>
+
+            <section id="chatMessages" class="chat-messages"></section>
+
+            <section class="suggestions">
+                <button type="button" onclick="sendSuggestion(this)">What should I study today?</button>
+                <button type="button" onclick="sendSuggestion(this)">Quiz me on my weak topics</button>
+                <button type="button" onclick="sendSuggestion(this)">Show my progress</button>
+                <button type="button" onclick="sendSuggestion(this)">Make a study roadmap</button>
+            </section>
+
+            <footer class="chat-input">
+                <input id="messageInput" type="text" placeholder="Ask your AI Coach anything..." autocomplete="off">
+                <!-- <button id="sendBtn" type="button">Send</button> -->
+            </footer>
+        </main>
+    </div>
+
+    <script src="extractmemory.js" defer></script>
+    <script src="chat.js" defer></script>
+</body>
+</html>

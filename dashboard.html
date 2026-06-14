@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Coach AI Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-shell">
+        <aside class="sidebar">
+            <div class="logo">🧠 Study Coach AI</div>
+            <nav class="menu">
+                <button class="menu-item active">Dashboard</button>
+                <a class="menu-item" href="chat.html">AI Coach</a>
+                <button class="menu-item" id="btnReset">Reset Profile</button>
+            </nav>
+
+            <div class="sidebar-card">
+                <div class="sidebar-label">Learning style</div>
+                <div id="learningStyle" class="sidebar-value">Visual</div>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-label">Study time</div>
+                <div id="studyTime" class="sidebar-value">-</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="header-card">
+                <div>
+                    <p class="eyebrow">Your dashboard</p>
+                    <h1 id="studentName">Welcome Back, Student 👋</h1>
+                    <p class="subtext">This dashboard now runs on local browser memory, so the whole coach survives without MySQL.</p>
+                </div>
+                <a href="chat.html" class="coach-btn">Talk To AI Coach</a>
+            </section>
+
+            <div id="err" style="display:none"></div>
+
+            <section class="hero-grid">
+                <article class="glass-card mission-card">
+                    <div class="card-top">
+                        <h2>Today's Mission 🎯</h2>
+                        <span class="chip success">Live</span>
+                    </div>
+                    <p id="missionText" class="mission-text">Finish your onboarding to generate today's mission.</p>
+                </article>
+
+                <article class="glass-card profile-card">
+                    <div class="card-top">
+                        <h2>Goal</h2>
+                        <span class="chip">Profile</span>
+                    </div>
+                    <p id="goalText" class="big-value">No active goal</p>
+                    <div class="mini-meta">
+                        <span>Streak: <strong id="studyStreak">1 day</strong></span>
+                        <span>Average score: <strong id="averageScore">Coming Soon</strong></span>
+                    </div>
+                </article>
+            </section>
+
+            <section class="topic-grid">
+                <article class="glass-card">
+                    <div class="card-top">
+                        <h2>Strong Topics</h2>
+                        <span class="chip success">Stored locally</span>
+                    </div>
+                    <div id="strongTopics" class="topic-wrap"></div>
+                </article>
+
+                <article class="glass-card">
+                    <div class="card-top">
+                        <h2>Weak Topics</h2>
+                        <span class="chip warning">Needs attention</span>
+                    </div>
+                    <div id="weakTopics" class="topic-wrap"></div>
+                </article>
+            </section>
+
+            <section class="soon-grid">
+                <article class="glass-card soon-card">
+                    <h3>Average Score</h3>
+                    <p>🚧 Coming Soon</p>
+                </article>
+                <article class="glass-card soon-card">
+                    <h3>Graphs</h3>
+                    <p>🚧 Coming Soon</p>
+                </article>
+                <article class="glass-card soon-card">
+                    <h3>Today's Personalized Study Plan</h3>
+                    <p>🚧 Coming Soon</p>
+                </article>
+                <article class="glass-card soon-card">
+                    <h3>Achievements</h3>
+                    <p>🚧 Coming Soon</p>
+                </article>
+            </section>
+
+            <section class="footer-note glass-card">
+                <p>Tip: your chat remembers goals, style, and topic history using <code>localStorage</code>. No backend database needed for the demo sprint.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js" defer></script>
+</body>
+</html>
