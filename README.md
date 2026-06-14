@@ -13,6 +13,7 @@ https://oldserver.karad.city/apps/aatif/scaweb/
 2) After that click on Start Journey
 3) Fill you information
 4) Talk to Study Coach AI.
+5) After typing message hit enter.
 
 ## Overview
 
