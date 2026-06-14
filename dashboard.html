@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Coach AI Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            🧠 Study Coach AI
+        </div>
+
+        <ul class="menu">
+            <li class="active">🏠 Dashboard</li>
+            <li>🤖 AI Coach</li>
+            <!-- <li>📚 Study Plan</li> -->
+            <!-- <li>📊 Progress</li> -->
+            <!-- <li>📝 Quiz Center</li> -->
+            <li>🏆 Achievements</li>
+            <li>⚙️ Settings</li>
+        </ul>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <div class="header">
+
+            <div>
+                <h1 id="studentName">Welcome Back, Student 👋</h1>
+                <p>Your AI learning journey continues today.</p>
+            </div>
+
+            <a href="chat.html" class="coach-btn">
+                Talk To AI Coach
+            </a>
+
+            <div class="ai-orb">
+                <div class="orb"></div>
+            </div>
+
+        </div>
+
+        <div id="err"></div>
+
+        <div class="welcome-card">
+
+            <h2>
+                Today's Mission 🎯
+            </h2>
+
+            <p>
+                Complete your AI Fundamentals lesson,
+                review Transformers,
+                and score above 80% in today's quiz.
+            </p>
+
+        </div>
+
+        <!-- TOP CARDS -->
+
+        <div class="cards">
+
+            <div class="card goal-card">
+                <h3>Current Goal</h3>
+                <h2 id="goalText">Learn Generative AI</h2>
+            </div>
+
+            <div class="card">
+                <h3>Progress</h3>
+                <div class="progress-ring">
+
+                    <svg width="110" height="110">
+
+                        <circle
+                            class="bg-ring"
+                            cx="55"
+                            cy="55"
+                            r="45">
+                        </circle>
+
+                        <circle
+                            class="progress-circle"
+                            cx="55"
+                            cy="55"
+                            r="45">
+                        </circle>
+
+                    </svg>
+
+                    <span>65%</span>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Study Streak</h3>
+                <h2 id="study-streak">12 Days 🔥</h2>
+            </div>
+
+            <div class="card">
+                <h3>Average Score</h3>
+                <h2>82%</h2>
+            </div>
+
+        </div>
+
+        <!-- CHARTS -->
+
+        <div class="chart-grid">
+
+            <div class="chart-card">
+                <h3>Learning Progress</h3>
+                <canvas id="progressChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h3>Topic Mastery</h3>
+                <canvas id="topicChart"></canvas>
+            </div>
+
+        </div>
+
+        <!-- STRONG & WEAK -->
+
+        <div class="topics-grid">
+
+            <div class="card">
+                <h3>Strong Topics 💪</h3>
+
+                <div class="topic-pill">
+                    Prompt Engineering
+                </div>
+
+                <div class="topic-pill">
+                    AI Basics
+                </div>
+
+                <div class="topic-pill">
+                    Python
+                </div>
+
+            </div>
+
+            <div class="card">
+                <h3>Weak Topics 🎯</h3>
+
+                <div class="topic-pill weak">
+                    Neural Networks
+                </div>
+
+                <div class="topic-pill weak">
+                    Transformers
+                </div>
+
+                <div class="topic-pill weak">
+                    Deep Learning
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TODAY PLAN -->
+
+        <div class="card study-plan">
+
+            <h3>Today's Personalized Study Plan</h3>
+
+            <ul>
+
+                <li>20 min - Attention Mechanism</li>
+
+                <li>20 min - Transformers Basics</li>
+
+                <li>20 min - Practice Quiz</li>
+
+                <li>15 min - Revision</li>
+
+            </ul>
+
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+
+        <div class="card">
+
+            <h3>Recent Achievements 🏆</h3>
+
+           <div class="badges">
+
+                <div class="badge">
+                    🏆 First Quiz
+                </div>
+
+                <div class="badge">
+                    🔥 5 Day Streak
+                </div>
+
+                <div class="badge">
+                    🚀 AI Beginner
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<div id="particles"></div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
