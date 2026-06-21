@@ -6,6 +6,8 @@ The AI Study Coach That Remembers, Adapts, and Guides.
 Uses Microsoft Azure and Microsoft Foundry Services.
 The Web APP is also made using Coding Agent.
 
+<img width="900" height="900" alt="ai-skills-fest-2026" src="https://github.com/user-attachments/assets/76091857-d49b-44ac-a63a-f17f5fd1d7fc" />
+
 ## Demo Url
 https://oldserver.karad.city/apps/aatif/scaweb/
 
